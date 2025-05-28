@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary via-accent to-secondary p-1.5 shadow-2xl">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center shadow-inner">
                 <img
-                  src="src/assets/profile.png"
+                  src="public/assets/profile.png"
                   alt="Talal Hassan Khan"
                   className="w-36 h-36 rounded-full object-cover"
                 />

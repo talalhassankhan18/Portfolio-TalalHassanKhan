@@ -7,7 +7,7 @@ const ProjectsSection = () => {
     {
       title: "SalonSphere",
       description: "SalonSphere is an AI-powered platform that connects users with salons and beauty products, offering seamless booking, personalized recommendations, and vendor management.",
-      image: "src/assets/Project 1.jpg",
+      image: "public/assets/Project 1.jpg",
       tech: [
         "Next.js", "Tailwind CSS", "TypeScript", "Node.js", "MongoDB", "Mongoose",
         "NextAuth.js", "Cloudinary", "Python", "scikit-learn", "Vercel"
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     {
       title: "TrendyLivings",
       description: "TrendyLivings is a Laravel-based platform that connects contractors, construction material providers, home décor experts, and clients to streamline home and corporate space development.",
-      image: "src/assets/Project 2.jpeg",
+      image: "public/assets/Project 2.jpeg",
       tech: [
         "HTML5", "CSS3", "JavaScript", "Bootstrap", "Laravel", "PHP", "Node.js", "phpMyAdmin"
       ],
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
     {
       title: "SnapLeads",
       description: "SnapLeads is a modern and intuitive dashboard UI designed in Figma to manage agents, campaigns, leads, and performance metrics for lead generation platforms.",
-      image: "src/assets/Project 3.png",
+      image: "public/assets/Project 3.png",
       tech: ["Figma"],
       prototypeLink: "https://www.figma.com/proto/cxajBYgpsCx3AUMnXMG52o/fiver-project?node-id=0-1&t=KQx1wyohf6vZCG92-1",
       webLink: null,
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
     {
       title: "Crypt2Call",
       description: "Crypt2Call is a secure mobile communication app UI designed in Figma, offering encrypted chats, voice & video calls, and community features — similar to WhatsApp.",
-      image: "src/assets/Project 4.png",
+      image: "public/assets/Project 4.png",
       tech: ["Figma"],
       prototypeLink: "https://www.figma.com/proto/ygPQD9V3Bs0GsU8EuTIvqH/Crypt2call?node-id=0-1&t=bF2NcWgja8mACNyA-1",
       webLink: null,
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
     {
       title: "QuickLift",
       description: "QuickLift is a ride-sharing mobile app UI designed in Figma, allowing users to book and share rides while enabling drivers to register and offer transportation services.",
-      image: "src/assets/Project 5.png",
+      image: "public/assets/Project 5.png",
       tech: ["Figma"],
       platformFocus: "Android & iOS (mobile-first design)",
       prototypeLink: "https://www.figma.com/proto/ElXVh6KctRApkVY3O2gk4i/QUICK-LIFT----RIDE-SHARING-APP?t=bF2NcWgja8mACNyA-1",
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
     {
       title: "TaskFlow",
       description: "TaskFlow is a productivity-focused mobile and web app UI designed in Figma to help users efficiently manage, organize, and track their daily tasks.",
-      image: "src/assets/Project 6.png", // Assuming a new image, adjust path as needed
+      image: "public/assets/Project 6.png", // Assuming a new image, adjust path as needed
       tech: ["Figma"],
       platformFocus: "Mobile & Web-compatible (responsive design)",
       prototypeLink: "https://www.figma.com/proto/6rRsnY5bnCMu1VarHPQ6bI/TaskFlow?t=bF2NcWgja8mACNyA-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&node-id=21-68&starting-point-node-id=4%3A483",
