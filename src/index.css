@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 31 31 31;
+
+    --card: 41 47 54;
+    --card-foreground: 255 255 255;
+
+    --popover: 255 255 255;
+    --popover-foreground: 31 31 31;
+
+    --primary: 180 0 78;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 35 31 32;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 234 234 234;
+    --muted-foreground: 31 31 31;
+
+    --accent: 213 170 104;
+    --accent-foreground: 26 26 26;
+
+    --destructive: 191 97 106;
+    --destructive-foreground: 61 0 0;
+
+    --border: 234 234 234;
+    --input: 234 234 234;
+    --ring: 180 0 78;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 31 31 31;
+    --sidebar-primary: 180 0 78;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 234 234 234;
+    --sidebar-accent-foreground: 31 31 31;
+    --sidebar-border: 234 234 234;
+    --sidebar-ring: 180 0 78;
+  }
+
+  .dark {
+    --background: 35 31 32;
+    --foreground: 255 255 255;
+
+    --card: 41 47 54;
+    --card-foreground: 255 255 255;
+
+    --popover: 35 31 32;
+    --popover-foreground: 255 255 255;
+
+    --primary: 180 0 78;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 74 74 74;
+    --secondary-foreground: 255 255 255;
+
+    --muted: 74 74 74;
+    --muted-foreground: 255 255 255;
+
+    --accent: 213 170 104;
+    --accent-foreground: 26 26 26;
+
+    --destructive: 191 97 106;
+    --destructive-foreground: 61 0 0;
+
+    --border: 74 74 74;
+    --input: 74 74 74;
+    --ring: 180 0 78;
+
+    --sidebar-background: 35 31 32;
+    --sidebar-foreground: 255 255 255;
+    --sidebar-primary: 180 0 78;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 74 74 74;
+    --sidebar-accent-foreground: 255 255 255;
+    --sidebar-border: 74 74 74;
+    --sidebar-ring: 180 0 78;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-base-100 text-base-content font-inter;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
