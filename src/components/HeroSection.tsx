@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary via-accent to-secondary p-1.5 shadow-2xl">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center shadow-inner">
                 <img
-                  src="public/profile.png"
+                  src="/profile.png"
                   alt="Talal Hassan Khan"
                   className="w-36 h-36 rounded-full object-cover"
                 />
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-xl md:text-3xl font-medium text-primary mb-8 tracking-wide">
-            Full Stack Developer & UI/UX Designer
+            UI/UX Designer
           </h2>
           
           <p className="text-lg md:text-xl text-base-content/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
@@ -110,7 +110,7 @@ const HeroSection = () => {
 
           {/* Download Resume */}
           <div className="mt-8">
-            <a href="public/Resume.pdf" download="Talal_Hassan_Khan_Resume.pdf">
+            <a href="/Resume.pdf" download="Talal_Hassan_Khan_Resume.pdf">
               <Button 
                 variant="ghost" 
                 className="text-base-content/60 hover:text-primary bg-white/50 backdrop-blur-sm hover:bg-white/80 border border-gray-200/50 transition-all duration-300"
