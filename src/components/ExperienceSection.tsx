@@ -11,7 +11,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "UI/UX Designer",
-      company: "Quipsol",
+      company: "QuipSol",
       duration: "Jul 2025 - Present • Ongoing",
       location: "Pakistan - Hybrid",
       description:

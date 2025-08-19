@@ -73,10 +73,106 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
+      title: "Muckdogs Baseball Club Website",
+      description:
+        "Muckdogs Baseball Club is a modern website UI designed in Figma, showcasing training programs, academy facilities, coaching staff, and success stories while promoting tryouts and community involvement.",
+      image: "/Project 10.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/qFSnAgVzpBXjae76RmiZfG/Muckdogs-Baseball-Club?node-id=0-9&p=f&t=IfxC7nzkFHgApdWY-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Darlene Bullock & Associates LLC Website",
+      description:
+        "Darlene Bullock & Associates is a professional website UI designed in Figma, highlighting federal contracting services, training, and strategic guidance to help businesses succeed with expert-led solutions.",
+      image: "/Project 11.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/bWhX0YdlE0JzG8ggsqqzOO/Darlene-Bullock---Associates-LLC?node-id=1-8&p=f&t=jXOfK2F35aafIsyP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Cultural Enrichment Center Directory Website",
+      description:
+        "Cultural Enrichment Center Directory is a modern website UI designed in Figma, highlighting members, events, and partners while enabling users to browse programs, join the community, and support cultural initiatives.",
+      image: "/Project 9.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/t8qHy8WQV1MEhvFMMkfHET/Cultural-Enrichment-Center-Directory?t=JncSdrtHrhX6j9Ai-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=2-8",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Darryl Barnes Website",
+      description:
+        "Darryl Barnes is a website UI designed in Figma, highlighting his role as Maryland State Delegate, showcasing legislation, events, scholarships, and community initiatives while encouraging public involvement.",
+      image: "/Project 13.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/iAnm1FUqMil1uwdvaCW4jE/Darryl-Barnes?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=0-1",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Baltimore Sports and Life Website",
+      description:
+        "Baltimore Sports and Life is a website UI designed in Figma, covering local sports news, forums, and events with dedicated sections for the Orioles, Ravens, and Terps, offering fans articles, highlights, and community discussions.",
+      image: "/Project 17.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/iOtioGCimULhlaNn5L06Qa/Baltimore-Sports-and-Life?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=10-181",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Buddy n Beast Website",
+      description:
+        "Buddy n Beast is a website UI designed in Figma, featuring premium pet products with a mission-driven approach where every purchase supports shelter animals, combining style, compassion, and community impact.",
+      image: "/Project 21.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/nexmqdu7oQLkSgmIfgKTMV/Buddy-N-Beast?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=5-5",
+      webLink: null,
+      featured: true,
+    },
+    {
       title: "Cultural Enrichment Center",
       description:
         "Cultural Enrichment Center is a modern website UI designed in Figma, showcasing programs, events, and workshops while encouraging community involvement through arts and cultural diversity.",
-      image: "/Project 8.png", // Placeholder image path
+      image: "/Project 8.png",
       tech: [
         "Figma",
         "Web App Interface Designing",
@@ -89,10 +185,10 @@ const ProjectsSection = () => {
       featured: true,
     },
     {
-      title: "Cultural Enrichment Center Directory Website",
+      title: "Mecca Recovery Solutions Website",
       description:
-        "Cultural Enrichment Center Directory is a modern website UI designed in Figma, highlighting members, events, and partners while enabling users to browse programs, join the community, and support cultural initiatives.",
-      image: "/Project 9.png", // Placeholder image path
+        "Mecca Recovery Solutions is a website UI designed in Figma, presenting sober living programs with a focus on empathy, accountability, and community support to guide men on their recovery journey.",
+      image: "/Project 12.png",
       tech: [
         "Figma",
         "Web App Interface Designing",
@@ -100,7 +196,103 @@ const ProjectsSection = () => {
         "Prototyping",
       ],
       prototypeLink:
-        "https://www.figma.com/proto/t8qHy8WQV1MEhvFMMkfHET/Cultural-Enrichment-Center-Directory?t=JncSdrtHrhX6j9Ai-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=2-8",
+        "https://www.figma.com/proto/gbYMtcuLVLvXLBeEepmCyj/MECCA-RECOVERY-SOLUTIONS?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-8",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Md. Washington Minority Companies Association Website",
+      description:
+        "Md. Washington Minority Companies Association is a website UI designed in Figma, advocating for minority and women-owned businesses by connecting large and small companies, promoting collaboration, certifications, and growth opportunities.",
+      image: "/Project 14.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/Tv9TahzynWmQQUlWWgN91H/Md.-Washington-Minority--Companies-Association?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=2-656",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Timely Partner Website",
+      description:
+        "Timely Partner is a website UI designed in Figma, offering complete event planning solutions with sections for services, gallery, testimonials, and easy consultation booking for clients.",
+      image: "/Project 15.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/jARuKpRQN7Kkso0bB9laT0/Timely-Partner?node-id=3-8&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Mattingly Electric Inc. Website",
+      description:
+        "Mattingly Electric Inc. is a website UI designed in Figma, showcasing professional electrical services from residential repairs to industrial installations, with a focus on reliability, certification, and 24/7 emergency support.",
+      image: "/Project 16.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/2rYg5hyRUwVe7fXY0k50n0/Mattingly-Electric-Inc.?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=28-5",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Destiny Unlimited International Website",
+      description:
+        "Destiny Unlimited International is a website UI designed in Figma, offering professional coaching, consulting, and training services focused on purpose-driven leadership, strategic faith, and transformative personal and business growth.",
+      image: "/Project 18.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/ELX4EbzTqLh8PojAEj3NMU/Destiny-Unlimited-International?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-2129",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "The Bin Doctor Website",
+      description:
+        "The Bin Doctor is a website UI designed in Figma, promoting curbside bin cleaning and sanitization services with an eco-friendly process that kills 99.9% of bacteria, protects families, and supports local communities.",
+      image: "/Project 19.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/gd8zKanYducoP9QOXDnrr0/The-Doctor-Bin?node-id=3-466&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      webLink: null,
+      featured: true,
+    },
+    {
+      title: "Carbon Solutions America Website",
+      description:
+        "Carbon Solutions America is a website UI designed in Figma, showcasing sustainability consulting services that help organizations reduce emissions, cut costs, and enhance brand value with transparent, results-driven strategies.",
+      image: "/Project 20.png",
+      tech: [
+        "Figma",
+        "Web App Interface Designing",
+        "Wireframing",
+        "Prototyping",
+      ],
+      prototypeLink:
+        "https://www.figma.com/proto/xv1RV11wEIaV38MeXJYDHP/Carbon-Solutions-America?node-id=1-8&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
       webLink: null,
       featured: true,
     },
