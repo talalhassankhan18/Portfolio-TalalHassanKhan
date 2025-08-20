@@ -85,6 +85,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/qFSnAgVzpBXjae76RmiZfG/Muckdogs-Baseball-Club?node-id=0-9&p=f&t=IfxC7nzkFHgApdWY-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://www.muckdogsbaseballclub.com/",
       webLink: null,
       featured: true,
     },
@@ -101,6 +102,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/bWhX0YdlE0JzG8ggsqqzOO/Darlene-Bullock---Associates-LLC?node-id=1-8&p=f&t=jXOfK2F35aafIsyP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://darlenebullockassociates.com/",
       webLink: null,
       featured: true,
     },
@@ -117,6 +119,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/t8qHy8WQV1MEhvFMMkfHET/Cultural-Enrichment-Center-Directory?t=JncSdrtHrhX6j9Ai-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=2-8",
+      originalWebsiteLink: "https://www.culturalenrichmentcenter.org/",
       webLink: null,
       featured: true,
     },
@@ -133,6 +136,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/iAnm1FUqMil1uwdvaCW4jE/Darryl-Barnes?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=0-1",
+      originalWebsiteLink: "https://darrylbarnes.net/",
       webLink: null,
       featured: true,
     },
@@ -149,6 +153,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/iOtioGCimULhlaNn5L06Qa/Baltimore-Sports-and-Life?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=10-181",
+      originalWebsiteLink: "http://baltimoresportsandlife.com/",
       webLink: null,
       featured: true,
     },
@@ -165,6 +170,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/nexmqdu7oQLkSgmIfgKTMV/Buddy-N-Beast?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=5-5",
+      originalWebsiteLink: "https://buddynbeast.com/",
       webLink: null,
       featured: true,
     },
@@ -181,6 +187,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/8rs9Km5sU9uSityN1EKLhW/Cultural-Enrichment-Center?node-id=1-8&p=f&t=JncSdrtHrhX6j9Ai-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://www.culturalenrichmentcenter.org/",
       webLink: null,
       featured: true,
     },
@@ -197,6 +204,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/gbYMtcuLVLvXLBeEepmCyj/MECCA-RECOVERY-SOLUTIONS?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-8",
+      originalWebsiteLink: "https://meccarecovery.com/",
       webLink: null,
       featured: true,
     },
@@ -213,6 +221,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/Tv9TahzynWmQQUlWWgN91H/Md.-Washington-Minority--Companies-Association?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=2-656",
+      originalWebsiteLink: "https://mwmca.org/home",
       webLink: null,
       featured: true,
     },
@@ -229,6 +238,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/jARuKpRQN7Kkso0bB9laT0/Timely-Partner?node-id=3-8&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://www.timelypartner.com/",
       webLink: null,
       featured: true,
     },
@@ -245,6 +255,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/2rYg5hyRUwVe7fXY0k50n0/Mattingly-Electric-Inc.?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=28-5",
+      originalWebsiteLink: "https://www.mattinglyelectrical.com/",
       webLink: null,
       featured: true,
     },
@@ -261,6 +272,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/ELX4EbzTqLh8PojAEj3NMU/Destiny-Unlimited-International?t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-2129",
+      originalWebsiteLink: "http://www.destinyui.com/",
       webLink: null,
       featured: true,
     },
@@ -277,6 +289,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/gd8zKanYducoP9QOXDnrr0/The-Doctor-Bin?node-id=3-466&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://www.bindoctorusa.com/",
       webLink: null,
       featured: true,
     },
@@ -293,6 +306,7 @@ const ProjectsSection = () => {
       ],
       prototypeLink:
         "https://www.figma.com/proto/xv1RV11wEIaV38MeXJYDHP/Carbon-Solutions-America?node-id=1-8&p=f&t=AKNaPpknYFp08U2c-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      originalWebsiteLink: "https://www.carbonsolutionsamerica.com/",
       webLink: null,
       featured: true,
     },
@@ -515,18 +529,46 @@ const ProjectsSection = () => {
                       </Badge>
                     ))}
                   </div>
-                  {project.prototypeLink && (
-                    <Button
-                      variant="default"
-                      size="sm"
-                      className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
-                      onClick={() =>
-                        window.open(project.prototypeLink, "_blank")
-                      }
-                    >
-                      View Prototype
-                    </Button>
-                  )}
+                  <div className="flex gap-2">
+                    {project.prototypeLink &&
+                      project.tech.includes("Web App Interface Designing") && (
+                        <>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="text-xs border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors duration-300"
+                            onClick={() =>
+                              window.open(project.originalWebsiteLink, "_blank")
+                            }
+                          >
+                            View Original Website
+                          </Button>
+                          <Button
+                            variant="default"
+                            size="sm"
+                            className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
+                            onClick={() =>
+                              window.open(project.prototypeLink, "_blank")
+                            }
+                          >
+                            View My Redesign
+                          </Button>
+                        </>
+                      )}
+                    {project.prototypeLink &&
+                      !project.tech.includes("Web App Interface Designing") && (
+                        <Button
+                          variant="default"
+                          size="sm"
+                          className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
+                          onClick={() =>
+                            window.open(project.prototypeLink, "_blank")
+                          }
+                        >
+                          View Prototype
+                        </Button>
+                      )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
