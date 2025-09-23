@@ -4,82 +4,80 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Code,
-  Database,
   Paintbrush,
   GitBranch,
   Video,
-  Globe,
   Layout,
   Github,
   Figma,
   Palette,
-  Server,
-  BarChart,
   Users,
   Star,
   Briefcase,
+  PenTool,
+  Eye,
+  Smartphone,
+  Server,
 } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    { name: "Next.js", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "React", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "TypeScript", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "Node.js", icon: <Server className="w-4 h-4 mr-2" /> },
-    { name: "Python", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "MongoDB", icon: <Database className="w-4 h-4 mr-2" /> },
-    { name: "Tailwind CSS", icon: <Paintbrush className="w-4 h-4 mr-2" /> },
-    { name: "REST APIs", icon: <Globe className="w-4 h-4 mr-2" /> },
-    { name: "PHP", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "Laravel", icon: <Code className="w-4 h-4 mr-2" /> },
     { name: "UI/UX Design", icon: <Layout className="w-4 h-4 mr-2" /> },
     { name: "Figma", icon: <Figma className="w-4 h-4 mr-2" /> },
-    { name: "Git", icon: <GitBranch className="w-4 h-4 mr-2" /> },
-    { name: "Graphic Designing", icon: <Palette className="w-4 h-4 mr-2" /> },
+    { name: "Sketch", icon: <PenTool className="w-4 h-4 mr-2" /> },
+    { name: "Adobe XD", icon: <PenTool className="w-4 h-4 mr-2" /> },
+    { name: "Prototyping", icon: <Smartphone className="w-4 h-4 mr-2" /> },
+    { name: "Wireframing", icon: <Layout className="w-4 h-4 mr-2" /> },
+    { name: "User Research", icon: <Eye className="w-4 h-4 mr-2" /> },
+    { name: "Interaction Design", icon: <Layout className="w-4 h-4 mr-2" /> },
+    { name: "Graphic Design", icon: <Palette className="w-4 h-4 mr-2" /> },
     { name: "Video Editing", icon: <Video className="w-4 h-4 mr-2" /> },
+    { name: "React", icon: <Code className="w-4 h-4 mr-2" /> },
+    { name: "Next.js", icon: <Code className="w-4 h-4 mr-2" /> },
+    { name: "TypeScript", icon: <Code className="w-4 h-4 mr-2" /> },
+    { name: "Tailwind CSS", icon: <Paintbrush className="w-4 h-4 mr-2" /> },
     { name: "HTML", icon: <Code className="w-4 h-4 mr-2" /> },
     { name: "CSS", icon: <Paintbrush className="w-4 h-4 mr-2" /> },
     { name: "JavaScript", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "Machine Learning", icon: <BarChart className="w-4 h-4 mr-2" /> },
-    { name: "Data Science", icon: <BarChart className="w-4 h-4 mr-2" /> },
+    { name: "Git", icon: <GitBranch className="w-4 h-4 mr-2" /> },
+    {
+      name: "Responsive Design",
+      icon: <Smartphone className="w-4 h-4 mr-2" />,
+    },
+    { name: "Design Systems", icon: <Layout className="w-4 h-4 mr-2" /> },
   ];
 
   const tools = [
-    { name: "VS Code", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "MongoDB", icon: <Database className="w-4 h-4 mr-2" /> },
-    { name: "MySQL", icon: <Database className="w-4 h-4 mr-2" /> },
-    { name: "Vercel", icon: <Server className="w-4 h-4 mr-2" /> },
-    { name: "GitHub", icon: <Github className="w-4 h-4 mr-2" /> },
     { name: "Figma", icon: <Figma className="w-4 h-4 mr-2" /> },
+    { name: "Sketch", icon: <PenTool className="w-4 h-4 mr-2" /> },
+    { name: "Adobe XD", icon: <PenTool className="w-4 h-4 mr-2" /> },
     { name: "Adobe Illustrator", icon: <Palette className="w-4 h-4 mr-2" /> },
     { name: "Adobe Photoshop", icon: <Palette className="w-4 h-4 mr-2" /> },
-    { name: "Collab", icon: <Users className="w-4 h-4 mr-2" /> },
-    { name: "Kaggle", icon: <BarChart className="w-4 h-4 mr-2" /> },
-    { name: "Spider", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "Anaconda Navigator", icon: <Code className="w-4 h-4 mr-2" /> },
-    { name: "Streamlit", icon: <Layout className="w-4 h-4 mr-2" /> },
+    { name: "VS Code", icon: <Code className="w-4 h-4 mr-2" /> },
+    { name: "GitHub", icon: <Github className="w-4 h-4 mr-2" /> },
+    { name: "Vercel", icon: <Server className="w-4 h-4 mr-2" /> },
   ];
 
   const stats = [
     {
-      value: "50+",
-      label: "Projects Completed",
+      value: "60+",
+      label: "UI/UX Projects",
       icon: <Briefcase className="w-6 h-6 mb-2 text-yellow-400" />,
     },
     {
-      value: "2+",
-      label: "Years of Experience",
+      value: "3+",
+      label: "Years in Design",
       icon: <Star className="w-6 h-6 mb-2 text-yellow-400" />,
     },
     {
-      value: "300+",
+      value: "250+",
       label: "Happy Clients",
       icon: <Users className="w-6 h-6 mb-2 text-yellow-400" />,
     },
     {
-      value: "400+",
-      label: "Customer Reviews",
-      icon: <Star className="w-6 h-6 mb-2 text-yellow-400" />,
+      value: "10+",
+      label: "Design Systems Built",
+      icon: <Layout className="w-6 h-6 mb-2 text-yellow-400" />,
     },
   ];
 
@@ -128,8 +126,8 @@ const AboutSection = () => {
             className="text-lg sm:text-xl text-base-content/70 max-w-3xl mx-auto mt-6 leading-relaxed"
             variants={itemVariants}
           >
-            Discover my journey as a passionate developer and designer, crafting
-            solutions that blend innovation with user-centric design.
+            Discover my journey as a UI/UX designer and frontend developer,
+            creating intuitive and visually stunning digital experiences.
           </motion.p>
         </motion.div>
 
@@ -150,25 +148,32 @@ const AboutSection = () => {
             </CardHeader>
             <CardContent className="flex-grow space-y-6 text-base-content/80 leading-relaxed text-base sm:text-lg">
               <motion.p variants={itemVariants}>
-                I'm a passionate full-stack developer with over 3 years of
-                experience creating digital solutions that blend beautiful
-                design with robust functionality. My journey began with a
-                Computer Science degree, but my real education happened through
-                countless late nights building projects I was excited about.
+                I’m a passionate UI/UX Designer with over 3 years of experience
+                crafting intuitive and user-focused digital experiences. My
+                journey began in graphic design and video editing, which gave me
+                a strong foundation in visual storytelling and aesthetics. Over
+                time, I transitioned into UI/UX design, where I found my true
+                passion—designing interfaces that are not only visually engaging
+                but also meaningful and easy to use.
               </motion.p>
               <motion.p variants={itemVariants}>
-                I specialize in React/Next ecosystems and modern web
-                technologies, but I'm equally comfortable diving into backend
-                development, database design, and cloud architecture. What
-                drives me is the intersection of technology and user experience
-                – creating applications that not only work flawlessly but feel
-                intuitive and delightful to use.
+                Currently, I’m working as a UI/UX Designer at QuipSol
+                (previously at HiSkyTech), where I design and refine web and
+                mobile applications from research and wireframing to prototyping
+                and final delivery. My design process is rooted in user
+                research, usability principles, and design thinking, ensuring
+                every interaction feels seamless.
               </motion.p>
               <motion.p variants={itemVariants}>
-                When I'm not coding, you'll find me exploring new design trends,
-                contributing to open-source projects, or sharing knowledge
-                through technical writing and mentoring. I believe in continuous
-                learning and staying ahead of the ever-evolving tech landscape.
+                While my core expertise lies in UI/UX design, I also have
+                hands-on experience in frontend implementation using React,
+                Next.js, and Tailwind CSS, which allows me to better collaborate
+                with developers and ensure my designs are translated accurately.
+              </motion.p>
+              <motion.p variants={itemVariants}>
+                I’m always exploring new design trends, experimenting with
+                motion and interaction design, and continuously learning to
+                create experiences that truly connect with users.
               </motion.p>
             </CardContent>
           </Card>

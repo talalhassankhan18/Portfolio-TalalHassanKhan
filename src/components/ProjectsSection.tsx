@@ -379,11 +379,11 @@ const ProjectsSection = () => {
   ];
 
   const featuredProjects = projects.filter((project) => project.featured);
-  const webDevelopmentProjects = featuredProjects.filter(
-    (project) => !project.tech.includes("Figma")
-  );
   const uiUxProjects = featuredProjects.filter((project) =>
     project.tech.includes("Figma")
+  );
+  const webDevelopmentProjects = featuredProjects.filter(
+    (project) => !project.tech.includes("Figma")
   );
 
   const handleImageClick = (project) => {
@@ -411,77 +411,6 @@ const ProjectsSection = () => {
             Here are some of my recent projects that showcase my skills in web
             development, design, and problem-solving.
           </p>
-        </div>
-
-        {/* Web Development Projects */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-playfair font-semibold text-base-content mb-12 text-center">
-            Web Development Projects
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {webDevelopmentProjects.map((project, index) => (
-              <Card
-                key={project.title}
-                className="group hover:scale-105 transition-all duration-500 border-0 overflow-hidden"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
-                    onClick={() => handleImageClick(project)}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#401B1B]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-playfair">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-secondary leading-relaxed">
-                    {project.description}
-                    {project.platformFocus && (
-                      <span className="block text-sm text-gray-400 mt-1">
-                        {project.platformFocus}
-                      </span>
-                    )}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="secondary"
-                        className="bg-secondary text-white hover:bg-white hover:text-secondary transition-colors duration-300 text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="text-xs border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors duration-300"
-                      onClick={() => window.open(project.githubLink, "_blank")}
-                    >
-                      GitHub
-                    </Button>
-                    {project.webLink && (
-                      <Button
-                        variant="default"
-                        size="sm"
-                        className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
-                        onClick={() => window.open(project.webLink, "_blank")}
-                      >
-                        Live Preview
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
 
         {/* UI/UX Designing Projects */}
@@ -568,6 +497,77 @@ const ProjectsSection = () => {
                           View Prototype
                         </Button>
                       )}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Web Designing and Development Projects */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-playfair font-semibold text-base-content mb-12 text-center">
+            Web Designing & Development Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {webDevelopmentProjects.map((project, index) => (
+              <Card
+                key={project.title}
+                className="group hover:scale-105 transition-all duration-500 border-0 overflow-hidden"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                    onClick={() => handleImageClick(project)}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#401B1B]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl font-playfair">
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription className="text-secondary leading-relaxed">
+                    {project.description}
+                    {project.platformFocus && (
+                      <span className="block text-sm text-gray-400 mt-1">
+                        {project.platformFocus}
+                      </span>
+                    )}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-secondary text-white hover:bg-white hover:text-secondary transition-colors duration-300 text-xs"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="text-xs border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors duration-300"
+                      onClick={() => window.open(project.githubLink, "_blank")}
+                    >
+                      GitHub
+                    </Button>
+                    {project.webLink && (
+                      <Button
+                        variant="default"
+                        size="sm"
+                        className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
+                        onClick={() => window.open(project.webLink, "_blank")}
+                      >
+                        Live Preview
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>

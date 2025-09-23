@@ -55,7 +55,7 @@ const HeroSection = () => {
           </h1>
 
           <h2 className="text-base sm:text-lg md:text-xl font-semibold text-primary mb-4 sm:mb-6 tracking-wider uppercase">
-            Full-Stack Developer & UI/UX Designer
+            UI/UX Designer
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-base-content/70 max-w-md sm:max-w-lg md:max-w-xl mb-6 sm:mb-8 leading-relaxed">
