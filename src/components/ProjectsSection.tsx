@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -6,10 +7,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 
 const ProjectsSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const projects = [
     {
       title: "Lawyer Case Diary",
@@ -30,6 +36,7 @@ const ProjectsSection = () => {
       webLink: null,
       githubLink: "https://github.com/talalhassankhan18/lawyercasediary",
       featured: true,
+      category: "web",
     },
     {
       title: "SalonSphere",
@@ -52,6 +59,7 @@ const ProjectsSection = () => {
       webLink: "https://salonsphere.vercel.app/",
       githubLink: "https://github.com/talalhassankhan18/Salonsphere",
       featured: true,
+      category: "web",
     },
     {
       title: "TrendyLivings",
@@ -71,6 +79,7 @@ const ProjectsSection = () => {
       webLink: null,
       githubLink: "https://github.com/talalhassankhan18/trendylivings",
       featured: true,
+      category: "web",
     },
     {
       title: "Muckdogs Baseball Club Website",
@@ -88,6 +97,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.muckdogsbaseballclub.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Darlene Bullock & Associates LLC Website",
@@ -105,6 +115,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://darlenebullockassociates.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Cultural Enrichment Center Directory Website",
@@ -122,6 +133,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.culturalenrichmentcenter.org/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Darryl Barnes Website",
@@ -139,6 +151,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://darrylbarnes.net/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Baltimore Sports and Life Website",
@@ -156,6 +169,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "http://baltimoresportsandlife.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Buddy n Beast Website",
@@ -173,6 +187,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://buddynbeast.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Cultural Enrichment Center",
@@ -190,6 +205,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.culturalenrichmentcenter.org/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Mecca Recovery Solutions Website",
@@ -207,6 +223,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://meccarecovery.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Md. Washington Minority Companies Association Website",
@@ -224,6 +241,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://mwmca.org/home",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Timely Partner Website",
@@ -241,6 +259,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.timelypartner.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Mattingly Electric Inc. Website",
@@ -258,6 +277,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.mattinglyelectrical.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Destiny Unlimited International Website",
@@ -275,6 +295,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "http://www.destinyui.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "The Bin Doctor Website",
@@ -292,6 +313,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.bindoctorusa.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Carbon Solutions America Website",
@@ -309,6 +331,7 @@ const ProjectsSection = () => {
       originalWebsiteLink: "https://www.carbonsolutionsamerica.com/",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "SnapLeads",
@@ -325,6 +348,7 @@ const ProjectsSection = () => {
         "https://www.figma.com/proto/cxajBYgpsCx3AUMnXMG52o/fiver-project?node-id=0-1&t=KQx1wyohf6vZCG92-1",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "Crypt2Call",
@@ -341,6 +365,7 @@ const ProjectsSection = () => {
         "https://www.figma.com/proto/ygPQD9V3Bs0GsU8EuTIvqH/Crypt2call?node-id=0-1&t=bF2NcWgja8mACNyA-1",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "QuickLift",
@@ -358,6 +383,7 @@ const ProjectsSection = () => {
         "https://www.figma.com/proto/ElXVh6KctRApkVY3O2gk4i/QUICK-LIFT----RIDE-SHARING-APP?t=bF2NcWgja8mACNyA-1",
       webLink: null,
       featured: true,
+      category: "uiux",
     },
     {
       title: "TaskFlow",
@@ -375,15 +401,37 @@ const ProjectsSection = () => {
         "https://www.figma.com/proto/6rRsnY5bnCMu1VarHPQ6bI/TaskFlow?t=bF2NcWgja8mACNyA-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&node-id=21-68&starting-point-node-id=4%3A483",
       webLink: null,
       featured: true,
+      category: "uiux",
+    },
+    {
+      title: "Habib Jewellery Social Media Post",
+      description:
+        "A captivating social media post design for Habib Jewellery, showcasing elegant jewelry pieces with vibrant visuals and engaging copy to attract followers.",
+      image: "/Post 2.jpg",
+      tech: ["Graphic Design", "Adobe Photoshop", "Adobe Illustrator"],
+      featured: true,
+      category: "posts",
+    },
+    {
+      title: "Muckdogs Web Redesign Showcase Post",
+      description:
+        "A before-and-after showcase post for the Muckdogs Baseball Club website redesign, highlighting the transformation from old to new design.",
+      image: "/Post 1.png",
+      tech: ["Graphic Design", "Figma", "Adobe Photoshop"],
+      featured: true,
+      category: "posts",
     },
   ];
 
   const featuredProjects = projects.filter((project) => project.featured);
-  const uiUxProjects = featuredProjects.filter((project) =>
-    project.tech.includes("Figma")
+  const uiUxProjects = featuredProjects.filter(
+    (project) => project.category === "uiux"
+  );
+  const postsProjects = featuredProjects.filter(
+    (project) => project.category === "posts"
   );
   const webDevelopmentProjects = featuredProjects.filter(
-    (project) => !project.tech.includes("Figma")
+    (project) => project.category === "web"
   );
 
   const handleImageClick = (project) => {
@@ -391,6 +439,11 @@ const ProjectsSection = () => {
     if (link) {
       window.open(link, "_blank");
     }
+  };
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
   };
 
   return (
@@ -419,7 +472,7 @@ const ProjectsSection = () => {
             UI/UX Designing Projects
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {uiUxProjects.map((project, index) => (
+            {uiUxProjects.map((project) => (
               <Card
                 key={project.title}
                 className="group hover:scale-105 transition-all duration-500 border-0 overflow-hidden"
@@ -504,13 +557,69 @@ const ProjectsSection = () => {
           </div>
         </div>
 
+        {/* Posts Designing Projects */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-playfair font-semibold text-base-content mb-12 text-center">
+            Posts Designing Projects
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {postsProjects.map((project) => (
+              <Card
+                key={project.title}
+                className="group hover:scale-105 transition-all duration-500 border-0 overflow-hidden"
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                    onClick={() => openModal(project.image)}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#401B1B]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl font-playfair">
+                    {project.title}
+                  </CardTitle>
+                  <CardDescription className="text-secondary leading-relaxed">
+                    {project.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-secondary text-white hover:bg-white hover:text-secondary transition-colors duration-300 text-xs"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      variant="default"
+                      size="sm"
+                      className="text-xs bg-primary text-white hover:bg-primary/80 transition-colors duration-300"
+                      onClick={() => openModal(project.image)}
+                    >
+                      View Design
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         {/* Web Designing and Development Projects */}
         <div className="mb-20">
           <h3 className="text-3xl font-playfair font-semibold text-base-content mb-12 text-center">
             Web Designing & Development Projects
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {webDevelopmentProjects.map((project, index) => (
+            {webDevelopmentProjects.map((project) => (
               <Card
                 key={project.title}
                 className="group hover:scale-105 transition-all duration-500 border-0 overflow-hidden"
@@ -624,6 +733,26 @@ const ProjectsSection = () => {
           </div>
         )}
       </div>
+
+      {/* Modal for Post Design */}
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="max-w-md p-0">
+          <div className="relative w-full h-full">
+            <img
+              src={selectedImage}
+              alt="Post Design"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <Button
+            variant="ghost"
+            className="absolute top-[-50px] right-[-60px] text-white hover:text-gray-300"
+            onClick={() => setIsModalOpen(false)}
+          >
+            <X size={24} />
+          </Button>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

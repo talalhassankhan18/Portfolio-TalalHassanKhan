@@ -1,32 +1,31 @@
-
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'testimonials', label: 'Testimonials' },
-    { id: 'contact', label: 'Contact' }
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
+    { id: "testimonials", label: "Testimonials" },
+    { id: "contact", label: "Contact" },
   ];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.id));
+      const sections = navItems.map((item) => document.getElementById(item.id));
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -38,8 +37,8 @@ const Navigation = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -47,25 +46,45 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-playfair font-bold text-primary hover:text-accent transition-colors duration-200 cursor-pointer">Portfolio</h1>
+            <h1 className="text-xl font-playfair font-bold text-primary hover:text-accent transition-colors duration-200 cursor-pointer">
+              Portfolio
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                    activeSection === item.id
-                      ? 'text-primary bg-primary/10 shadow-sm'
-                      : 'text-base-content hover:text-primary hover:bg-primary/5'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.id === "contact" ? (
+                  <Button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`bg-[#B4004E] text-white hover:bg-[#90003B] rounded-lg text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ${
+                      activeSection === item.id
+                        ? "ring-2 ring-[#B4004E]/50"
+                        : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Button>
+                ) : (
+                  <div key={item.id} className="relative group">
+                    <button
+                      onClick={() => scrollToSection(item.id)}
+                      className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                        activeSection === item.id
+                          ? "text-primary bg-white"
+                          : "text-base-content hover:text-primary hover:bg-primary/5 hover:shadow-sm"
+                      }`}
+                    >
+                      {item.label}
+                    </button>
+                    {activeSection === item.id && (
+                      <div className="absolute bottom-0 left-1/2 w-3/4 h-1 bg-[#B4004E] rounded-full transform -translate-x-1/2 transition-all duration-300"></div>
+                    )}
+                  </div>
+                )
+              )}
             </div>
           </div>
 
@@ -85,20 +104,38 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-base-100 border-t border-base-200 shadow-lg">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className={`block px-4 py-3 rounded-lg text-base font-medium w-full text-left transition-all duration-200 ${
-                    activeSection === item.id
-                      ? 'text-primary bg-primary/10 shadow-sm'
-                      : 'text-base-content hover:text-primary hover:bg-primary/5'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+            <div className="px-2 pt-2 pb-3 space-y-2 sm:px-3 bg-base-100 border-t border-base-200 shadow-lg">
+              {navItems.map((item) =>
+                item.id === "contact" ? (
+                  <Button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`w-full bg-[#B4004E] text-white hover:bg-[#90003B] rounded-lg text-base font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ${
+                      activeSection === item.id
+                        ? "ring-2 ring-[#B4004E]/50"
+                        : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Button>
+                ) : (
+                  <div key={item.id} className="relative group">
+                    <button
+                      onClick={() => scrollToSection(item.id)}
+                      className={`block px-4 py-3 rounded-lg text-base font-medium w-full text-left transition-all duration-300 ${
+                        activeSection === item.id
+                          ? "text-primary bg-white"
+                          : "text-base-content hover:text-primary hover:bg-primary/5 hover:shadow-sm"
+                      }`}
+                    >
+                      {item.label}
+                    </button>
+                    {activeSection === item.id && (
+                      <div className="absolute bottom-0 left-1/2 w-3/4 h-1 bg-[#B4004E] rounded-full transform -translate-x-1/2 transition-all duration-300"></div>
+                    )}
+                  </div>
+                )
+              )}
             </div>
           </div>
         )}
