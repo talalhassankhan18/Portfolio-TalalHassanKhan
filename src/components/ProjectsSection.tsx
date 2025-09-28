@@ -746,7 +746,7 @@ const ProjectsSection = () => {
           </div>
           <Button
             variant="ghost"
-            className="absolute top-[-50px] right-[-60px] text-white hover:text-gray-300"
+            className="absolute top-[-50px] right-0 text-white hover:text-gray-300"
             onClick={() => setIsModalOpen(false)}
           >
             <X size={24} />
