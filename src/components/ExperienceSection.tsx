@@ -51,25 +51,25 @@ const ExperienceSection = () => {
         "Prototyping",
       ],
     },
-    {
-      title: "Machine Learning Intern",
-      company: "CodeXCue - Internship",
-      duration: "Jul 2024 - Aug 2024 • 2 mos",
-      location: "Pakistan - Remote",
-      description:
-        "As a Machine Learning Intern at CodeXCue Software Solutions, I have worked on several cutting-edge projects:",
-      responsibilities: [
-        "Built an intelligent model for predicting tips which assists the users in making decisions.",
-        "Efficiently improved spam detection by combining hyperparameter tuning with other techniques, thereby increasing its accuracy.",
-        "Developed a powerful and dynamic model to predict car prices based on key features providing valuable insights for users.",
-        "Made an innovative tool to estimate laptop prices based on machine learning technology and ensure precise evaluations are offered.",
-      ],
-      technologies: ["Machine Learning", "Streamlit", "Python"],
-    },
+    // {
+    //   title: "Machine Learning Intern",
+    //   company: "CodeXCue - Internship",
+    //   duration: "Jul 2024 - Aug 2024 • 2 mos",
+    //   location: "Pakistan - Remote",
+    //   description:
+    //     "As a Machine Learning Intern at CodeXCue Software Solutions, I have worked on several cutting-edge projects:",
+    //   responsibilities: [
+    //     "Built an intelligent model for predicting tips which assists the users in making decisions.",
+    //     "Efficiently improved spam detection by combining hyperparameter tuning with other techniques, thereby increasing its accuracy.",
+    //     "Developed a powerful and dynamic model to predict car prices based on key features providing valuable insights for users.",
+    //     "Made an innovative tool to estimate laptop prices based on machine learning technology and ensure precise evaluations are offered.",
+    //   ],
+    //   technologies: ["Machine Learning", "Streamlit", "Python"],
+    // },
     {
       title: "UI/UX Designing Services",
       company: "Fiverr",
-      duration: "Jul 2023 - Jul 2024 • 1 yr",
+      duration: "Jul 2023 - Jan 2025 • 1.5 yr",
       location: "Pakistan - Remote",
       description:
         "Provided freelance UI/UX design services on Fiverr, delivering custom solutions for clients worldwide. Focused on creating engaging and functional designs tailored to client needs, enhancing their digital presence.",

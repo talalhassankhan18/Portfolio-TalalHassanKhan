@@ -256,7 +256,7 @@ const AboutSection = () => {
             {stats.map((stat, i) => (
               <motion.div
                 key={i}
-                className="relative bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-6 text-center shadow-xl transition-all duration-300 hover:scale-105"
+                className="relative bg-gradient-to-r from-accent to-primary text-white rounded-lg p-6 text-center shadow-xl transition-all duration-300 hover:scale-105"
                 variants={itemVariants}
               >
                 <div className="flex justify-center">{stat.icon}</div>

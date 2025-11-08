@@ -128,7 +128,7 @@ const HeroSection = () => {
           {/* Download Resume */}
           <div>
             <a
-              href="/Resume-Talal Hassan khan.pdf"
+              href="/Resume UI UX Designer.pdf"
               download="Talal_Hassan_Khan_Resume.pdf"
             >
               <Button
